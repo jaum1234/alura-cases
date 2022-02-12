@@ -1,10 +1,10 @@
-import Footer from '../../components/patterns/Footer'
-import Link from '../../components/Link'
-import { theme } from '../../theme/theme';
-import { Image, Box, Text, Icon, Input, Button } from '../../theme/components';
+import Footer from '../../shared/Footer'
+import Link from '../../Link'
+import { theme } from '../../../theme/theme';
+import { Image, Box, Text, Icon, Input, Button } from '../../../theme/components';
 
-const LOGO_ALURA_URL = 'http://placehold.it/94x44';
-const SIDE_IMAGE_URL = 'http://placehold.it/2878x1640'
+const LOGO_ALURA_URL = '/images/alura-logo.svg';
+const SIDE_IMAGE_URL = '/images/alura-cases.png'
 
 function SideImage() {
   return (
@@ -163,7 +163,7 @@ export default function HomeScreen() {
               >
                 <Box>
                   <Link
-                    href="/faq"
+                    url="/faq"
                     styleSheet={{
                       display: "inline-flex",
                       alignItems: {
